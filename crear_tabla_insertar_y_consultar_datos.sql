@@ -1,6 +1,7 @@
 --- Crear la base de datos "blogdb" (Clic derecho sobre PostgreSQL 18 > Create > Database > Nombre: blogdb
 
 ---Procedemos a crear la tabla de usuarios Clic derecho sobre blogdb y elegir Query Tool)
+
 CREATE TABLE usuarios (
   id SERIAL PRIMARY KEY,
   nombre TEXT NOT NULL,
