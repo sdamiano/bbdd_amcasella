@@ -1,0 +1,102 @@
+Diagramas Entidad Relación (ER)
+
+🎯 Objetivos de esta clase
+Entender desde cero qué es un diagrama ER.
+
+
+Saber qué es una entidad, un atributo y una relación con ejemplos simples.
+
+
+Aprender qué son las claves primarias y foráneas.
+
+
+Conocer los tres tipos de relaciones (1:1, 1:N, M:N) y cómo representarlas.
+
+
+Aprender a leer y construir un diagrama ER paso a paso.
+
+
+
+🧠 ¿Qué es un modelo de datos?
+Un modelo de datos es una forma de pensar cómo vamos a organizar la información que nuestra aplicación necesita. Sirve para definir qué datos vamos a guardar y cómo se conectan entre sí.
+🧩 Es como hacer un mapa antes de viajar. No empezás a programar hasta tener claro qué datos vas a guardar.
+
+🧱 ¿Qué es una entidad?
+Una entidad es algo importante que querés guardar. Pensalo como un sustantivo que representa algo real dentro del sistema.
+En un blog, las entidades más importantes son:
+
+Usuario
+
+
+Post
+
+
+Comentario
+
+
+Cada entidad se transforma en una tabla en la base de datos.
+
+🔑 ¿Qué es un atributo?
+Un atributo es una característica de una entidad. Cada atributo se convierte en una columna dentro de la tabla correspondiente.
+Por ejemplo:
+La entidad Usuario puede tener: nombre, email, contraseña
+
+
+La entidad Post puede tener: título, contenido, fecha de creación
+
+
+
+🆔 ¿Qué es una clave primaria?
+Una clave primaria es un atributo que identifica a cada fila de forma única. No se puede repetir ni quedar vacío.
+Ejemplo: id suele ser la clave primaria en todas las tablas.
+
+🔐 ¿Qué es una clave foránea?
+Una clave foránea conecta una tabla con otra. Permite establecer relaciones entre entidades.
+Ejemplo: usuario_id en la tabla posts indica qué usuario escribió ese post.
+
+🔗 ¿Qué es una relación?
+Una relación indica cómo se vinculan dos entidades.
+Relación 1:1
+Un usuario tiene un único perfil extendido.
+
+
+Relación 1:N
+Un usuario puede tener muchos posts.
+
+
+Relación M:N
+Un post puede tener muchas etiquetas, y una etiqueta puede estar en muchos posts.
+
+
+
+🧮 Cómo se lee un diagrama ER
+Un diagrama ER tiene rectángulos para entidades, óvalos para atributos (opcional), y líneas para las relaciones. La cardinalidad (1, N) muestra cómo se conectan.
+|| → uno
+
+
+o{ → muchos
+
+
+Ejemplo: usuarios ||--o{ posts significa que un usuario tiene muchos posts.
+
+✍️ Cómo construir un diagrama ER paso a paso
+1. Identificamos las entidades
+Para un blog: Usuario, Post, Comentario
+2. Anotamos los atributos principales
+Usuario: id, nombre, email, contraseña
+
+
+Post: id, título, contenido, fecha, usuario_id
+
+
+Comentario: id, texto, fecha, usuario_id, post_id
+
+
+3. Definimos las relaciones
+Un usuario tiene muchos posts → 1:N
+
+
+Un post tiene muchos comentarios → 1:N
+
+
+Un usuario hace muchos comentarios → 1:N
