@@ -1,3 +1,4 @@
+--- Creación de tabla empleados
 CREATE TABLE empleados (
   id SERIAL PRIMARY KEY,
   nombre TEXT NOT NULL,
@@ -22,6 +23,7 @@ CREATE TABLE empleados (
   departamento TEXT
 );
 
+---Poblar la tabla con datos para comenzar con las prácticas
 INSERT INTO empleados (nombre, apellido, edad, puesto, salario, fecha_ingreso, departamento) VALUES
 ('Ana', 'Gómez', 29, 'Desarrollador', 85000, '2022-03-15', 'IT'),
 ('Juan', 'Pérez', 41, 'Líder Técnico', 120000, '2017-06-20', 'IT'),
