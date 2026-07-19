@@ -1,0 +1,7 @@
+---Consigna:Agregá una columna nueva llamada fecha_registro a la tabla, con valor por defecto la fecha actual.
+
+ALTER TABLE usuarios
+ADD COLUMN fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
+
+---Mostrá el resultado en el SELECT actualizado.
+SELECT * FROM usuarios;
