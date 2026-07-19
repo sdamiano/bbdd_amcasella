@@ -1,12 +1,17 @@
 ## Prácticas: Máster en Bases de Datos - Academia Mariana Casella
+
 Este repositorio contiene el desarrollo y seguimiento de las prácticas realizadas durante el Máster en Bases de Datos. 
+
 El proyecto se centra en la implementación y gestión de esquemas de datos utilizando PostgreSQL.
 
 🛠 Entorno de Trabajo
-Para garantizar la reproducibilidad de los resultados, las prácticas fueron desarrolladas bajo el siguiente entorno:
+
+Las prácticas fueron desarrolladas bajo el siguiente entorno:
 
 Sistema Operativo: Windows 11
+
 Motor de Base de Datos: PostgreSQL v18.4-2
+
 Herramienta de Gestión: pgAdmin 4
 
 📂 Estructura del Repositorio
