@@ -80,8 +80,10 @@ o{ → muchos
 Ejemplo: usuarios ||--o{ posts significa que un usuario tiene muchos posts.
 
 ✍️ Cómo construir un diagrama ER paso a paso
+
 1. Identificamos las entidades
 Para un blog: Usuario, Post, Comentario
+
 2. Anotamos los atributos principales
 Usuario: id, nombre, email, contraseña
 
